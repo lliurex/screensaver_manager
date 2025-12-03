@@ -28,7 +28,11 @@ class InhibitScreensaver:
 		if os.path.exists(self.cookie_path):
 			with open(self.cookie_path,'r',encoding='utf-8') as fd:
 				cookie=fd.readline()
-				self.iface.UnInhibit(int(cookie))
+				if cookie!="":
+					try:
+						self.iface.UnInhibit(int(cookie))
+					except:
+						pass
 			os.remove(self.cookie_path)
 	#def unInhibit
 
