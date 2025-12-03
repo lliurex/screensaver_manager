@@ -1,3 +1,9 @@
+screensaver-manager (0.35.2) noble; urgency=medium
+
+  * Catch error if cookie es empty
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 03 Dec 2025 09:56:24 +0100
+
 screensaver-manager (0.35.1) noble; urgency=medium
 
   * Initial release for noble
